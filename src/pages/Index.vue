@@ -1,6 +1,6 @@
 <template>
-  <q-page class="flex flex-center">
-    <h1>Home Page</h1>
+  <q-page class="index">
+    <chart type="line"> </chart>
   </q-page>
 </template>
 
@@ -8,7 +8,22 @@
 </style>
 
 <script>
+import Chart from '../components/charts/chart-container';
+
 export default {
   name: 'PageIndex',
+  components: {
+    Chart
+  }
 };
 </script>
+
+<style lang="scss" scoped>
+.index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 4vh;
+}
+</style>
+
