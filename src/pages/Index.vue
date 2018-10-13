@@ -1,6 +1,7 @@
 <template>
   <q-page class="index">
-    <chart type="line"> </chart>
+    <chart> </chart>
+    <chart-table v-if="activeGraph.type === 'bar'"> </chart-table>
   </q-page>
 </template>
 
@@ -8,12 +9,22 @@
 </style>
 
 <script>
+import { mapState } from 'vuex';
+
 import Chart from '../components/charts/chart-container';
+import ChartTable from '../components/tables/table-container';
 
 export default {
   name: 'PageIndex',
   components: {
-    Chart
+    Chart,
+    ChartTable
+  },
+  computed: {
+    ...mapState('app', ['homeGraphs']),
+    activeGraph() {
+      return Object.values(this.homeGraphs).find(graph => graph.active);
+    }
   }
 };
 </script>

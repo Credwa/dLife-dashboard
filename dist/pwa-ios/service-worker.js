@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.7b2ea1e201404d0e549708fec63df25a.js"
+  "precache-manifest.d52485d018591745d00101d2fed2677b.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "dlife-dashboard"});

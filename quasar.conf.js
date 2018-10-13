@@ -45,6 +45,11 @@ module.exports = function(ctx) {
         'QToolbar',
         'QToolbarTitle',
         'QBtn',
+        'QCard',
+        'QTabs',
+        'QTab',
+        'QFab',
+        'QBtnGroup',
         'QIcon',
         'QList',
         'QListHeader',
@@ -52,9 +57,20 @@ module.exports = function(ctx) {
         'QItemMain',
         'QItemSide',
         'QItemTile',
-        'QCollapsible'
+        'QCollapsible',
+        'QBtnDropdown',
+        'QPopover',
+        'QTable',
+        'QToggle',
+        'QInput',
+        'QSelect',
+        'QField',
+        'QTd',
+        'QChatMessage',
+        'QScrollArea'
+
       ],
-      directives: ['Ripple'],
+      directives: ['Ripple', 'CloseOverlay'],
       // Quasar plugins
       plugins: ['Notify']
       // iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
